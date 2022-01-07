@@ -1,0 +1,145 @@
+/* configuração mobile */
+/* configuração geral */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* configuração header  */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 20px 40px 35px;
+}
+
+header h1 {
+  color: #d2872c;
+  font-size: 1.5rem;
+}
+
+/* configuração para tirar menu desktop */
+.menu {
+  display: none;
+}
+
+/* configuração menu mobile */
+.lineMenuMobile {
+  width: 20px;
+  height: 2px;
+  background: #766f68;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+
+/* configuração main  */
+
+main {
+  text-align: center;
+}
+
+img {
+  width: 85vw;
+  max-width: 450px;
+}
+
+main h2 {
+  color: #766f68;
+  margin: 0px 10vw 24px 10vw;
+  font-size: 2rem;
+}
+
+main p {
+  color: #766f68;
+  margin: 0px 10vw 22px 10vw;
+}
+/* configuração botao start now */
+.buttonStart {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+
+  background-color: #d2872c;
+  width: 220px;
+  padding: 10px 0px;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.buttonStart:hover {
+  background-color: #b16c18;
+}
+
+@media (min-width: 650px) {
+  /* configuração desktop */
+  /* configuração para tirar menu mobile */
+  .lineMenuMobile {
+    display: none;
+  }
+  /* configuração menu desktop */
+  header {
+    align-items: start;
+    margin: 40px 35px 100px;
+  }
+
+  .menu {
+    display: initial;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .menu a {
+    color: #766f68;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.97rem;
+  }
+
+  .menu a:hover {
+    font-weight: 700;
+  }
+
+  /* configuração main */
+
+  /* configuração geral main */
+  main {
+    display: flex;
+    text-align: left;
+    position: relative;
+    margin-left: 75px;
+  }
+
+  /* configuração imagem  */
+  main img {
+    order: 2;
+    width: 55vw;
+    max-width: 55vw;
+    position: absolute;
+    z-index: -1;
+    right: 2px;
+  }
+
+  /* configuração titulo paragrafo e botao */
+  main h2 {
+    width: 50vw;
+    margin-left: 0px;
+    font-size: 2.5rem;
+  }
+
+  main p {
+    width: 40vw;
+    margin-left: 0px;
+  }
+
+  .buttonStart {
+    width: 27vw;
+    text-align: center;
+    max-width: 250px;
+  }
+}
